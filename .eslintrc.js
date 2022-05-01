@@ -11,6 +11,9 @@ module.exports = {
     camelcase: 0,
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
     'max-len': 0,
-    'no-restricted-syntax': 0
+    'no-restricted-syntax': 0,
+    'no-unused-expressions': 0,
+    yoda: 0,
+    'no-console': 0
   }
 };
