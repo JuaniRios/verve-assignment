@@ -45,8 +45,11 @@ function areAnagrams(str1, str2) {
 
   const letterCount = Array(26).fill(0);
 
+  // convert to lower case
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
+
   // Count letters of first string
-  // eslint-disable-next-line no-restricted-syntax
   for (const char of str1) {
     const idx = letterHashMap[char]; // index error on non alphabet letter
     if (idx === undefined) {

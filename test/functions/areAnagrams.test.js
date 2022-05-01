@@ -4,14 +4,14 @@ const { areAnagrams } = require('../../src/functions/areAnagrams');
 
 describe('correctly identifies anagrams', () => {
   const anagrams = [
-    ['angel', 'glean'],
+    ['angel', 'gleAn'],
     ['car', 'arc'],
-    ['brag', 'grab'],
+    ['brag', 'Grab'],
     ['study', 'dusty'],
-    ['peach', 'cheap'],
+    ['peaCh', 'cheap'],
     ['taste', 'state'],
     ['sadder', 'dreads'],
-    ['father', 'father'], // same word
+    ['faTHer', 'father'], // same word
   ];
 
   for (const anagram of anagrams) {
