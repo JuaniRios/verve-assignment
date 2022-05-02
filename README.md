@@ -1,24 +1,6 @@
-# Express API Starter
-
-Includes API Server utilities:
-
-* [morgan](https://www.npmjs.com/package/morgan)
-  * HTTP request logger middleware for node.js
-* [helmet](https://www.npmjs.com/package/helmet)
-  * Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help!
-* [dotenv](https://www.npmjs.com/package/dotenv)
-  * Dotenv is a zero-dependency module that loads environment variables from a `.env` file into `process.env`
-
-Development utilities:
-
-* [nodemon](https://www.npmjs.com/package/nodemon)
-  * nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
-* [eslint](https://www.npmjs.com/package/eslint)
-  * ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
-* [mocha](https://www.npmjs.com/package/mocha)
-  * ☕️ Simple, flexible, fun JavaScript test framework for Node.js & The Browser ☕️
-* [supertest](https://www.npmjs.com/package/supertest)
-  * HTTP assertions made easy via superagent.
+# Verve Ventures Assignment for Juan Ignacio Rios
+You need to have NodeJS and Postman installed in your machine.
+The text in boxes is code to be run on the terminal under this directory.
 
 ## Setup
 
@@ -26,20 +8,44 @@ Development utilities:
 npm install
 ```
 
-## Lint
 
-```
-npm run lint
-```
-
-## Test
+## Unit tests on internal functionality
 
 ```
 npm run test
 ```
 
-## Development
+## Start API
 
 ```
-npm run dev
+npm run start
 ```
+
+## API Testing
+Open postman and click the import button in the top left corner. select the postman_collection.json file in this repo.
+press the blue send button to see the response.
+
+## API Specification
+The api runs under http://localhost:5000/api/v1.
+
+### Endpoint /A:
+* accepts only POST request.
+* takes only JSON body
+* accepts 2 keys, str1, and str2
+* for more information about its functionality, refer to the pdf in the repo
+
+### Endpoint /B:
+* accepts only POST request.
+* takes only JSON body
+* accepts 2 keys, str1, and str2
+* for more information about its functionality, refer to the pdf in the repo
+
+### Endpoint /C:
+* accepts only POST request.
+* takes only JSON body
+* accepts 1 key, str1
+* for more information about its functionality, refer to the pdf in the repo
+
+
+## End Notes
+The skeleton of this project was produced by running npx create-express-api
